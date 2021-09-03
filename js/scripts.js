@@ -1,13 +1,12 @@
 
-    $(function () {
-    $(window).on('scroll', function () {
+ 
+    $(window).scroll(function() {
         if ( $(window).scrollTop() > 10 ) {
             $('.navbar').addClass('active');
         } else {
             $('.navbar').removeClass('active');
         }
     });
-});
 
 var docWidth = document.documentElement.offsetWidth;
 
