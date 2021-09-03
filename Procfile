@@ -1,1 +1,3 @@
-web: node --experimental-modules backend/server.js
+web: npm run start
+$ git add Procfile
+
