@@ -4,7 +4,8 @@
   "description": "get ur coffee here bro.",
   "main": "index.html",
   "scripts": {
-    "build": "npm install && npm run build",
+    "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
+    "heroku-postbuild": "npm run build",
     "clean": "rimraf dist",
     "copyfonts": "copyfiles -f node_modules/font-awesome/fonts/* dist/fonts",
     "imagemin": "imagemin img/* -o dist/img",
