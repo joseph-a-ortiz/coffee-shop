@@ -46,22 +46,23 @@ rgb(212, 167, 108);
   
   
   /* Change navbar styling on scroll */
-  .navbar.active {
+  #navbar2 {
     background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
   }
   
-  .navbar.active .nav-link {
+  #navbar2 .nav-link {
     color: #555;
   }
   
-  .navbar.active .nav-link:hover,
-  .navbar.active .nav-link:focus {
+  #navbar2 .nav-link:hover,
+  #navbar2 .nav-link:focus {
     color: #555;
     text-decoration: none;
   }
   
-  .navbar.active .navbar-brand {
+  #navbar2 .navbar-brand {
     color: #555;
   }
   
@@ -167,7 +168,7 @@ rgb(212, 167, 108);
     transition: all 0.3s;
     font-size: 0.9rem;
   }
-  
+
   .social-link:hover,
   .social-link:focus {
     background: #ddd;
