@@ -11,7 +11,8 @@
     "lite": "lite-server",
     "scss": "node-sass -o css/ css/",
     "start": "npm run watch:all",
-    "deploy": "gh-pages -d dist",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build",
     "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
     "watch:scss": "onchange 'css/*.scss' -- npm run scss",
     "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite'"
@@ -29,7 +30,6 @@
     "rimraf": "^3.0.2",
     "usemin-cli": "^0.6.0"
   },
-  
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.14.0",
     "bootstrap": "^4.5.0",
